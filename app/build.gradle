@@ -22,5 +22,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':lib')
+    //compile 'com.github.linuxjava:HorizontalRefreshLayout:0.1'
     compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2'
 }
