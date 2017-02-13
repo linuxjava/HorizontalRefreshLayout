@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="88dp"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/static_loading"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:indeterminate="true"
+        android:background="@drawable/ic_loading_1"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/animated_rotate_1"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
