@@ -9,7 +9,6 @@ android {
         targetSdkVersion ANDROID_BUILD_SDK_VERSION
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -22,5 +21,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2'
-    compile 'com.github.linuxjava:HorizontalRefreshLayout:f316b4d448'
+    compile project(':lib')
+    //compile 'xiao.free.horizontalrefreshlayout:lib:v1.0.0'
 }

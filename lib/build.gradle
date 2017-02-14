@@ -1,12 +1,9 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.robinxiao'
 
 android {
     compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+    resourcePrefix "horizontalrefreshlayout_"
 
     defaultConfig {
         minSdkVersion 14
@@ -30,48 +27,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
 }
 
-/*******************************上传maven配置********************************************/
-//group = 'xiao.free.horizontalrefreshlayout'// library库包名
-//version = '1.0.0'// 版本号
-//
-//task generateSourcesJar(type: Jar) {
-//    from android.sourceSets.main.java.srcDirs
-//    classifier = 'sources'
-//}
-//
-//
-//task generateJavadocs(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator)) //使用android.getBootClasspath关联Android SDK类文件
-//}
-//
-//task generateJavadocsJar(type: Jar, dependsOn: generateJavadocs) {
-//    from generateJavadocs.destinationDir
-//    classifier = 'javadoc'
-//}
-//
-////generateJavadocsJar.dependsOn generateJavadocs
-//
-//artifacts {
-//    //archives generateJavadocsJar //原文为generateJavaDocsJar，此处已做矫正，要严格显示大小写
-//    archives generateSourcesJar
-//}
-//
-//bintray {
-//    user ='guochangxiao' //在个人中心的路径里可以找到
-//    key ='6dde4115e9586d6a3bb98d8f3c6401b5dfd09ea9' //上述保存的API key
-//    pkg {
-//        repo ='maven' //必须设定一个值，这里选择maven
-//        name ='xiao.free.horizontalrefreshlayout' //必须，包名
-//        version {
-//            name ='1.0.0-first' //版本名称
-//            desc ='horizontalrefreshlayout' //版本描述
-//            released  =new Date() //上传过程中如果此处报错，可以注释掉此句
-//            vcsTag ='1.0.0' //版本
-//        }
-//        licenses = ['Apache-2.0'] //开源协议
-//        vcsUrl ='https://github.com/linuxjava/HorizontalRefreshLayout.git' //指定项目git地址
-//        websiteUrl ='https://github.com/linuxjava/HorizontalRefreshLayout' //项目官网地址
-//    }
-//    configurations = ['archives'] //必须为archives
-//}
+
+apply from: '../jcenter-push.gradle'
+
+
+
