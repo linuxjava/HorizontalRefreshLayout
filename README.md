@@ -5,4 +5,7 @@
 
 ## Gradle配置
 compile 'xiao.free.horizontalrefreshlayout:lib:v0.1.2'
+## XML配置
+```xml
 
+```
