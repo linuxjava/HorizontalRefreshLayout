@@ -21,6 +21,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2'
-    compile project(':lib')
+    //compile project(':lib')
+    compile 'xiao.free.horizontalrefreshlayout:lib:v0.1.0'
     //compile 'xiao.free.horizontalrefreshlayout:lib:v1.0.0'
 }

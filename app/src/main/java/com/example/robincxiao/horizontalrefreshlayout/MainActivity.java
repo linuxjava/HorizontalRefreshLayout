@@ -8,6 +8,8 @@ import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
 
 import xiao.free.horizontalrefreshlayout.HorizontalRefreshLayout;
 import xiao.free.horizontalrefreshlayout.RefreshCallBack;
+import xiao.free.horizontalrefreshlayout.refreshhead.LoadingRefreshHeader;
+import xiao.free.horizontalrefreshlayout.refreshhead.MaterialRefreshHeader;
 import xiao.free.horizontalrefreshlayout.refreshhead.NiceRefreshHeader;
 
 public class MainActivity extends AppCompatActivity implements RefreshCallBack {
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements RefreshCallBack {
             public void OnPageChanged(int oldPosition, int newPosition) {
                 int size = mLayoutAdapter.getItemCount();
                 if (size > 1 && newPosition == size - 1) {
-                    mLayoutAdapter.getMore();
+                    //mLayoutAdapter.getMore();
                     //refreshLayout.startAutoRefresh(HorizontalRefreshLayout.RIGHT);
                 }
             }

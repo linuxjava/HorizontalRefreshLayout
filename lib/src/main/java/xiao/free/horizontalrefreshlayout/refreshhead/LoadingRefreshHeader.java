@@ -43,13 +43,6 @@ public class LoadingRefreshHeader implements RefreshHeader {
     @Override
     public void onDragging(float distance, float percent, View refreshHead) {
         staticLoading.setRotation(percent * 360);
-        if(percent >= 0 && percent <= 0.1){
-            staticLoading.setBackgroundResource(R.drawable.ic_loading_1);
-        }else if(percent > 0.1 && percent <= 0.2){
-            staticLoading.setBackgroundResource(R.drawable.ic_loading_2);
-        }else {
-            staticLoading.setBackgroundResource(R.drawable.ic_loading_3);
-        }
     }
 
     @Override
