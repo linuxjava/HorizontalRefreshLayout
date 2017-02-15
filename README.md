@@ -34,3 +34,5 @@ refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefresh
 refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.RIGHT);
 ```
 通过setRefreshHeader方法可以设置左右刷新头部，库中已支持三种刷新效果，如下图所示：
+
+![bga_refreshlayout1](https://github.com/linuxjava/HorizontalRefreshLayout/master/gif/1.gif)
