@@ -33,3 +33,4 @@ refreshLayout.setRefreshCallback(this);
 refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.LEFT);
 refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.RIGHT);
 ```
+通过setRefreshHeader方法可以设置左右刷新头部，库中已支持三种刷新效果，如下图所示：
