@@ -5,6 +5,12 @@
 
 ##  APK下载
 [Download](https://github.com/linuxjava/HorizontalRefreshLayout/raw/master/apk/app-debug.apk)
+##  Demo使用
+运行demo需删除gradle.properties中的代理
+systemProp.http.proxyHost=dev-proxy.oa.com
+systemProp.http.proxyPort=8080
+systemProp.https.proxyHost=dev-proxy.oa.com
+systemProp.https.proxyPort=8080
 ## Gradle配置
 compile 'xiao.free.horizontalrefreshlayout:lib:v0.1.2'
 ## XML配置
