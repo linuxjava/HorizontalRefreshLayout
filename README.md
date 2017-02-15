@@ -26,3 +26,10 @@ compile 'xiao.free.horizontalrefreshlayout:lib:v0.1.2'
 
 </xiao.free.horizontalrefreshlayout.HorizontalRefreshLayout>
 ```
+## Java代码
+```java
+refreshLayout = (HorizontalRefreshLayout) findViewById(R.id.refresh);
+refreshLayout.setRefreshCallback(this);
+refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.LEFT);
+refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.RIGHT);
+```
