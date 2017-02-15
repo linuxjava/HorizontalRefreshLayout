@@ -3,8 +3,8 @@
 
 开发者使用 HorizontalRefreshLayout-Android 可以对RecycView、Listview、ScrollView等控件实现左右刷新
 
-##  [APK下载](https://github.com/linuxjava/HorizontalRefreshLayout/raw/master/apk/app-debug.apk)
-
+##  APK下载
+[Download](https://github.com/linuxjava/HorizontalRefreshLayout/raw/master/apk/app-debug.apk)
 ## Gradle配置
 compile 'xiao.free.horizontalrefreshlayout:lib:v0.1.2'
 ## XML配置
