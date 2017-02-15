@@ -34,3 +34,8 @@ refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefresh
 refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefreshLayout.RIGHT);
 ```
 通过setRefreshHeader方法可以设置左右刷新头部，库中已支持三种刷新效果，如下图所示：
+
+![image](https://github.com/linuxjava/HorizontalRefreshLayout/raw/master/gif/1.gif)
+
+(http://github.com/yourname/your-repository/raw/master/images-folder/xxx.png)
+![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
