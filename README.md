@@ -42,3 +42,24 @@ refreshLayout.setRefreshHeader(new LoadingRefreshHeader(this), HorizontalRefresh
 ![image](https://github.com/linuxjava/HorizontalRefreshLayout/raw/master/gif/3.gif)
 
 ## 自定义Header
+可通过实现如下接口实现自定义header
+```java
+public interface RefreshHeader {
+    /**
+     * @param dragPosition  HorizontalRefreshLayout.START or HorizontalRefreshLayout.END
+     */
+    void onStart(int dragPosition, View refreshHead);
+
+    /**
+     * @param distance
+     */
+    void onDragging(float distance, float percent, View refreshHead);
+
+    void onReadyToRelease(View refreshHead);
+
+    @NonNull View getView(ViewGroup container);
+
+    void onRefreshing(View refreshHead);
+}
+```
+具体可参考lib库中refreshhead目录中的实现
